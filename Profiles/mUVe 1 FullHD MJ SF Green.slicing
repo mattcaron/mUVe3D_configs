@@ -40,6 +40,8 @@ M17 ;Enable motors
 ;Here you can set any G or M-Code which should be executed after the last Layer is Printed
 G92 ;Set back to absolute
 M18 ;Disable Motors
+; The following turns off the projector after the print is done.
+;&lt;DispCmd&gt; ALL, VIEWSONIC_OFF
 ;&lt;Completed&gt;
 ;********** Footer End ********
 </GCodeFooter>
