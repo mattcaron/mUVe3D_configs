@@ -17,7 +17,7 @@
   <AntiAliasing>False</AntiAliasing>
   <UseMainLiftGCode>False</UseMainLiftGCode>
   <AntiAliasingValue>1.5</AntiAliasingValue>
-  <LiftFeedRate>1</LiftFeedRate>
+  <LiftFeedRate>0.5</LiftFeedRate>
   <BottomLiftFeedRate>25</BottomLiftFeedRate>
   <LiftRetractRate>0</LiftRetractRate>
   <ExportOption>ZIP</ExportOption>
@@ -33,7 +33,7 @@
 G21 ;Set units to be mm
 G91 ;Relative Positioning
 G28 ; Home Printer
-M650 D$ZLiftDist S$ZLiftRate P0;mUVe 1 Prefs
+{$CURSLICE &lt; 50?M650 D($ZLiftDist) S($ZLiftRate) P0;Lift at the lift rate for the lift distance.:M650 D($ZLiftDist) S($ZLiftRate*4) P0;Lift at 4 times the lift rate for the lift distance.}
 M17 ;Enable motors
 ;********** Header End **********</GCodeHeader>
   <GCodeFooter>;********** Footer Start ********
@@ -73,7 +73,7 @@ M17 ;Enable motors
     <Name>MJ SF Green</Name>
     <SliceHeight>0.100000001490116</SliceHeight>
     <LayerTime>8000</LayerTime>
-    <FirstLayerTime>20000</FirstLayerTime>
+    <FirstLayerTime>60000</FirstLayerTime>
     <NumberofBottomLayers>2</NumberofBottomLayers>
     <ResinPriceL>0</ResinPriceL>
   </InkConfig>
