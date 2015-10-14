@@ -26,9 +26,9 @@
     <DLP_X_Res>1920</DLP_X_Res>
     <DLP_Y_Res>1080</DLP_Y_Res>
     <MonitorID>Display 1</MonitorID>
-    <DisplayCommEnabled>False</DisplayCommEnabled>
+    <DisplayCommEnabled>True</DisplayCommEnabled>
     <ComPortSettings>
-      <PortName>Com1</PortName>
+      <PortName>/dev/ttyS0</PortName>
       <Speed>115200</Speed>
       <Databits>8</Databits>
       <Parity>None</Parity>
@@ -39,9 +39,8 @@
     <MonitorLeft>0</MonitorLeft>
     <MonitorRight>1</MonitorRight>
     <MonitorBottom>1</MonitorBottom>
-    <CorrectionMask>
-    </CorrectionMask>
-    <UseMask>False</UseMask>
+    <CorrectionMask>/home/matt/workspace/3d_printing/software/creation_workshop/configs/ProjectorMask.jpg</CorrectionMask>
+    <UseMask>True</UseMask>
   </MonitorDriverConfig>
   <UserParameters />
 </MachineConfig>
