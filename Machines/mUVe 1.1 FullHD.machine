@@ -8,7 +8,7 @@
   <MaxZFeedRate>100</MaxZFeedRate>
   <XRenderSize>1920</XRenderSize>
   <YRenderSize>1080</YRenderSize>
-  <DisplayedControls>ZTPGD</DisplayedControls>
+  <DisplayedControls>ZPGD</DisplayedControls>
   <MachineType>UV_DLP</MachineType>
   <MultiMonType>eVertical</MultiMonType>
   <MotorsDriverConfig>
