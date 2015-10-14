@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MachineConfig FileVersion="1">
-  <PlatformXSize>172</PlatformXSize>
-  <PlatformYSize>97</PlatformYSize>
+  <PlatformXSize>170</PlatformXSize>
+  <PlatformYSize>96</PlatformYSize>
   <PlatformZSize>180</PlatformZSize>
   <MaxXFeedRate>100</MaxXFeedRate>
   <MaxYFeedRate>100</MaxYFeedRate>
@@ -14,7 +14,7 @@
   <MotorsDriverConfig>
     <DriverType>eGENERIC</DriverType>
     <ComPortSettings>
-      <PortName>Com1</PortName>
+      <PortName>/dev/ttyACM0</PortName>
       <Speed>115200</Speed>
       <Databits>8</Databits>
       <Parity>None</Parity>
@@ -25,7 +25,7 @@
   <MonitorDriverConfig>
     <DLP_X_Res>1920</DLP_X_Res>
     <DLP_Y_Res>1080</DLP_Y_Res>
-    <MonitorID>Display 0</MonitorID>
+    <MonitorID>Display 1</MonitorID>
     <DisplayCommEnabled>False</DisplayCommEnabled>
     <ComPortSettings>
       <PortName>Com1</PortName>
