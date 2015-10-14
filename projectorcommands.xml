@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectorCmdList FileVersion="1">
+  <Command>
+    <Name>Test Command</Name>
+    <IsHex>False</IsHex>
+    <Cmd>03abfc34</Cmd>
+  </Command>
+  <Command>
+    <Name>ACER_ON</Name>
+    <IsHex>False</IsHex>
+    <Cmd>4F4B4F4B4F4B4F4B4F4B0D</Cmd>
+  </Command>
+  <Command>
+    <Name>ACER_OFF</Name>
+    <IsHex>False</IsHex>
+    <Cmd>2A2030204952203030320D</Cmd>
+  </Command>
+  <Command>
+    <Name>ACER_LAMPHRS</Name>
+    <IsHex>False</IsHex>
+    <Cmd>2A204C414D500D</Cmd>
+  </Command>
+  <Command>
+    <Name>VIEWSONIC_ON</Name>
+    <IsHex>False</IsHex>
+    <Cmd>0614000400341100005D</Cmd>
+  </Command>
+  <Command>
+    <Name>VIEWSONIC_OFF</Name>
+    <IsHex>False</IsHex>
+    <Cmd>0614000400341101005E</Cmd>
+  </Command>
+  <Command>
+    <Name>VIEWSONIC_BLACK</Name>
+    <IsHex>False</IsHex>
+    <Cmd>061400040034110A0067</Cmd>
+  </Command>
+</ProjectorCmdList>
