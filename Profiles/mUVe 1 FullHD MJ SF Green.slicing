@@ -33,11 +33,15 @@
 G21 ;Set units to be mm
 G91 ;Relative Positioning
 G28 ; Home Printer
-M650 D$ZLiftDist S$ZLiftRate P0;mUVe 1 Prefs
+M650 D$ZLiftDist S$ZLiftRate P0 T20;mUVe 1 Prefs
 M17 ;Enable motors
 ;********** Header End **********</GCodeHeader>
   <GCodeFooter>;********** Footer Start ********
 ;Here you can set any G or M-Code which should be executed after the last Layer is Printed
+; *** Post print lift and tilt ***
+G1 Z50 ; Lift up 50mm
+M653 ; Do mUVe tilt move.
+; *** End Post print lift and tilt ***
 G92 ;Set back to absolute
 M18 ;Disable Motors
 ; The following turns off the projector after the print is done.
