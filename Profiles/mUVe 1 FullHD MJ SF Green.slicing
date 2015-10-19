@@ -33,7 +33,7 @@
 G21 ;Set units to be mm
 G91 ;Relative Positioning
 G28 ; Home Printer
-{$CURSLICE &lt; 50?M650 D($ZLiftDist) S($ZLiftRate) P0;Lift at the lift rate for the lift distance.:M650 D($ZLiftDist) S($ZLiftRate*4) P0;Lift at 4 times the lift rate for the lift distance.}
+M650 D$ZLiftDist S$ZLiftRate P0;mUVe 1 Prefs
 M17 ;Enable motors
 ;********** Header End **********</GCodeHeader>
   <GCodeFooter>;********** Footer Start ********
