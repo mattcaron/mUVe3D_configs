@@ -78,7 +78,7 @@ M17 ;Enable motors
   <InkConfig>
     <Name>MJ SF Green</Name>
     <SliceHeight>0.100000001490116</SliceHeight>
-    <LayerTime>6000</LayerTime>
+    <LayerTime>5000</LayerTime>
     <FirstLayerTime>30000</FirstLayerTime>
     <NumberofBottomLayers>2</NumberofBottomLayers>
     <ResinPriceL>0</ResinPriceL>
