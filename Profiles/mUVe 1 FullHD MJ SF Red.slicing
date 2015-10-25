@@ -12,7 +12,7 @@
   <XOffset>0</XOffset>
   <YOffset>0</YOffset>
   <Direction>Bottom_Up</Direction>
-  <LiftDistance>3.5</LiftDistance>
+  <LiftDistance>2</LiftDistance>
   <SlideTiltValue>0</SlideTiltValue>
   <AntiAliasing>False</AntiAliasing>
   <UseMainLiftGCode>False</UseMainLiftGCode>
@@ -72,8 +72,8 @@ M17 ;Enable motors
   <InkConfig>
     <Name>MJ SF Red</Name>
     <SliceHeight>0.100000001490116</SliceHeight>
-    <LayerTime>12000</LayerTime>
-    <FirstLayerTime>50000</FirstLayerTime>
+    <LayerTime>8000</LayerTime>
+    <FirstLayerTime>30000</FirstLayerTime>
     <NumberofBottomLayers>2</NumberofBottomLayers>
     <ResinPriceL>0</ResinPriceL>
   </InkConfig>
