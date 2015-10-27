@@ -12,7 +12,7 @@
   <XOffset>0</XOffset>
   <YOffset>0</YOffset>
   <Direction>Bottom_Up</Direction>
-  <LiftDistance>2</LiftDistance>
+  <LiftDistance>3.5</LiftDistance>
   <SlideTiltValue>0</SlideTiltValue>
   <AntiAliasing>False</AntiAliasing>
   <UseMainLiftGCode>False</UseMainLiftGCode>
