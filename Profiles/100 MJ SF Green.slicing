@@ -12,12 +12,12 @@
   <XOffset>0</XOffset>
   <YOffset>0</YOffset>
   <Direction>Bottom_Up</Direction>
-  <LiftDistance>2</LiftDistance>
+  <LiftDistance>3.5</LiftDistance>
   <SlideTiltValue>0</SlideTiltValue>
   <AntiAliasing>False</AntiAliasing>
   <UseMainLiftGCode>False</UseMainLiftGCode>
   <AntiAliasingValue>1.5</AntiAliasingValue>
-  <LiftFeedRate>0.5</LiftFeedRate>
+  <LiftFeedRate>1</LiftFeedRate>
   <BottomLiftFeedRate>25</BottomLiftFeedRate>
   <LiftRetractRate>0</LiftRetractRate>
   <ExportOption>ZIP</ExportOption>
@@ -78,7 +78,7 @@ M17 ;Enable motors
   <InkConfig>
     <Name>MJ SF Green</Name>
     <SliceHeight>0.100000001490116</SliceHeight>
-    <LayerTime>5000</LayerTime>
+    <LayerTime>8000</LayerTime>
     <FirstLayerTime>30000</FirstLayerTime>
     <NumberofBottomLayers>2</NumberofBottomLayers>
     <ResinPriceL>0</ResinPriceL>
