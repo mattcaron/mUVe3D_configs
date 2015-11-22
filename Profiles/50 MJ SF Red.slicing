@@ -12,7 +12,7 @@
   <XOffset>0</XOffset>
   <YOffset>0</YOffset>
   <Direction>Bottom_Up</Direction>
-  <LiftDistance>3.5</LiftDistance>
+  <LiftDistance>2</LiftDistance>
   <SlideTiltValue>0</SlideTiltValue>
   <AntiAliasing>False</AntiAliasing>
   <UseMainLiftGCode>False</UseMainLiftGCode>
@@ -33,7 +33,7 @@
 G21 ;Set units to be mm
 G91 ;Relative Positioning
 G28 ; Home Printer
-M650 D$ZLiftDist S$ZLiftRate P0 T20;mUVe 1 Prefs
+{$CURSLICE &lt; 100?M650 D($ZLiftDist) S($ZLiftRate) P0 T20;Lift at the lift rate for the lift distance.:M650 D($ZLiftDist) S($ZLiftRate*5) P0 T20;Lift at 4 times the lift rate for the lift distance.}
 M17 ;Enable motors
 ;********** Header End **********</GCodeHeader>
   <GCodeFooter>;********** Footer Start ********
