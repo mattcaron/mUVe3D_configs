@@ -33,7 +33,7 @@
 G21 ;Set units to be mm
 G91 ;Relative Positioning
 G28 ; Home Printer
-{$CURSLICE &lt; 50?M650 D($ZLiftDist) S($ZLiftRate) P0 T20;Lift at the lift rate for the lift distance.:M650 D($ZLiftDist) S($ZLiftRate*5) P0 T20;Lift at 5 times the lift rate for the lift distance.}
+M650 D($ZLiftDist) S($ZLiftRate) P0 T20
 M17 ;Enable motors
 ;********** Header End **********</GCodeHeader>
   <GCodeFooter>;********** Footer Start ********
@@ -54,6 +54,7 @@ M18 ;Disable Motors
 ;********** Pre-Slice End **********
 </GCodePreslice>
   <GCodeLift>;********** Lift Sequence ********
+{$CURSLICE &lt; 50?M650 D($ZLiftDist) S($ZLiftRate) P0 T20;Lift at the lift rate for the lift distance.:M650 D($ZLiftDist) S($ZLiftRate*5) P0 T20;Lift at 5 times the lift rate for the lift distance.}
 M651; Do mUVe 1 Peel Move
 G1 Z(($LayerThickness) * $ZDir)
 ;********** Lift Sequence **********
