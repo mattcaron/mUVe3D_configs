@@ -14,7 +14,7 @@
   <Direction>Bottom_Up</Direction>
   <LiftDistance>2</LiftDistance>
   <SlideTiltValue>0</SlideTiltValue>
-  <AntiAliasing>False</AntiAliasing>
+  <AntiAliasing>True</AntiAliasing>
   <UseMainLiftGCode>False</UseMainLiftGCode>
   <AntiAliasingValue>1.5</AntiAliasingValue>
   <LiftFeedRate>5</LiftFeedRate>
