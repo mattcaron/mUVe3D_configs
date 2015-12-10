@@ -19,7 +19,7 @@
   <AntiAliasingValue>1.5</AntiAliasingValue>
   <LiftFeedRate>1</LiftFeedRate>
   <BottomLiftFeedRate>25</BottomLiftFeedRate>
-  <LiftRetractRate>0</LiftRetractRate>
+  <LiftRetractRate>30</LiftRetractRate>
   <ExportOption>ZIP</ExportOption>
   <RenderOutlines>False</RenderOutlines>
   <OutlineWidth_Inset>2</OutlineWidth_Inset>
@@ -33,7 +33,7 @@
 G21 ;Set units to be mm
 G91 ;Relative Positioning
 G28 ; Home Printer
-M650 D($ZLiftDist) S($ZLiftRate) P0 T20
+M650 D($ZLiftDist) S($ZLiftRate) P0 T20 R($ZRetractRate)
 M17 ;Enable motors
 ;********** Header End **********</GCodeHeader>
   <GCodeFooter>;********** Footer Start ********
@@ -54,7 +54,7 @@ M18 ;Disable Motors
 ;********** Pre-Slice End **********
 </GCodePreslice>
   <GCodeLift>;********** Lift Sequence ********
-{$CURSLICE &lt; 50?M650 D($ZLiftDist) S($ZLiftRate) P0 T20;Lift at the lift rate for the lift distance.:M650 D($ZLiftDist) S($ZLiftRate*5) P0 T20;Lift at 5 times the lift rate for the lift distance.}
+{$CURSLICE &lt; 50?M650 D($ZLiftDist) S($ZLiftRate) P0 T20 R($ZRetractRate);Lift at the lift rate for the lift distance.:M650 D($ZLiftDist) S($ZLiftRate*5) P0 T20 R($ZRetractRate);Lift at 5 times the lift rate for the lift distance.}
 M651; Do mUVe 1 Peel Move
 G1 Z(($LayerThickness) * $ZDir)
 ;********** Lift Sequence **********
